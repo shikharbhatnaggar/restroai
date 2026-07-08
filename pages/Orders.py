@@ -9,6 +9,17 @@ from services.orders import (
     cancel_order
 )
 
+# Inject custom CSS to hide the top header bar
+hide_bar_style = """
+    <style>
+    header[data-testid="stHeader"] {
+        visibility: hidden;
+        height: 0%;
+    }
+    </style>
+"""
+st.markdown(hide_bar_style, unsafe_allow_html=True)
+
 st.title("📋 Orders")
 
 orders = get_all_orders()
