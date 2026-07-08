@@ -7,6 +7,13 @@ hide_bar_style = """
         visibility: hidden;
         height: 0%;
     }
+    /* Hide the bottom "Manage app" toolbar and default footer */
+    [data-testid="stToolbar"] {
+        visibility: hidden !important;
+    }
+    footer {
+        visibility: hidden !important;
+    }
     </style>
 """
 st.markdown(hide_bar_style, unsafe_allow_html=True)
