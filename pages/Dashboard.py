@@ -7,6 +7,18 @@ from services.dashboard import (
     get_reserved_tables
 )
 
+
+# Inject custom CSS to hide the top header bar
+hide_bar_style = """
+    <style>
+    header[data-testid="stHeader"] {
+        visibility: hidden;
+        height: 0%;
+    }
+    </style>
+"""
+st.markdown(hide_bar_style, unsafe_allow_html=True)
+
 st.title("📊 Dashboard")
 
 open_tables = get_open_tables()
