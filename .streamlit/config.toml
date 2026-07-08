@@ -1,0 +1,6 @@
+[client]
+toolbarMode = "viewer"
+toolbarMode = "minimal"
+
+[ui]
+hideTopBar = true
