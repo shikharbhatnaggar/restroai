@@ -8,7 +8,7 @@ hide_bar_style = """
         height: 0%;
     }
     /* Hide the bottom "Manage app" toolbar and default footer */
-    [data-testid="stToolbar"] {
+    [data-testid="manage-app-button"] {
         visibility: hidden !important;
     }
     footer {
