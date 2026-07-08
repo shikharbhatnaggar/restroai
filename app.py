@@ -4,6 +4,7 @@ import streamlit as st
 hide_bar_style = """
     <style>
     header[data-testid="stHeader"] {
+        color: #000;
         visibility: hidden;
         height: 0%;
     }
