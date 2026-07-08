@@ -1,5 +1,18 @@
 import streamlit as st
 
+# Inject custom CSS to hide the top header bar
+hide_bar_style = """
+    <style>
+    header[data-testid="stHeader"] {
+        visibility: hidden;
+        height: 0%;
+    }
+    </style>
+"""
+st.markdown(hide_bar_style, unsafe_allow_html=True)
+
+
+
 from components.table_verification import (
     render_table_verification
 )
